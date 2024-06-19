@@ -1,0 +1,71 @@
+.header_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 200;
+    padding: 0 32px;
+    max-width: 1600px;
+    margin-top: -60px;
+}
+
+.header_header_left{
+    display: flex;
+}
+
+#header_header_left_marketplace_name{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+#header_header_left_catalog{
+    border-radius: 12px;
+    width: 100px;
+    cursor: pointer;
+    padding: 10px 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(../images/catalog-removebg-preview.png);
+    background-color: #33CCCC;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: 4%;
+}
+
+#header_header_left_catalog div {
+    display: flex;
+    text-align: end;
+    align-items: end;
+    justify-content: end;
+    padding-left: 70px;
+    color: white;
+}
+
+.header_search_form {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header_search_input {
+    padding: 13px;
+    font-size: 20px;
+    margin-right: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    font-family: inherit;
+    width: 600px;
+}
+
+
+
+.header_search_button {
+    padding: 2% 7%;
+    font-size: 100%;
+    cursor: pointer;
+    background-color: #33CCCC;
+    color:white;
+    border-radius: 7px;
+    border: none;
+}
