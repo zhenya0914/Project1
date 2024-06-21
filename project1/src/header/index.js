@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import shopping_cart from "../images/shopping_cart.png"
 import sign_in from "../images/sign_in.png"
 import favorites from "../images/favorites.png"
+import paro from "../images/paro_white.png"
 
 export default function Header() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -19,7 +20,9 @@ export default function Header() {
         <div className="header_box">
             <div className="header_header">
                 <div className="header_header_left">
-                    <div id="header_header_left_marketplace_name">Paro</div>
+                    <div id="header_header_left_marketplace_name">
+                        <Image src={paro} width={150}></Image>
+                    </div>
                     <div id="header_header_left_button"><button id="header_header_left_catalog"><div>Каталог</div></button></div>
                 </div>
             
