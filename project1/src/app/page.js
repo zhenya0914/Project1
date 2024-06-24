@@ -1,21 +1,13 @@
 import styles from "./page.module.css";
-import Header from "@/header/index";
+import Header from "@/components/header/page";
+import Main from "../components/main/page.js"
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header></Header>
-      <div className={styles.description}>
-        
-      </div>
-
-      <div className={styles.center}>
-        
-      </div>
-
-      <div className={styles.grid}>
-        
-      </div>
+      <Header />
+      <p className={styles.main_section}></p>
+      <Main></Main>
     </main>
   );
 }

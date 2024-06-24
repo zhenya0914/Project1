@@ -2,10 +2,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import React, { useState } from "react";
-import shopping_cart from "../images/shopping_cart.png"
-import sign_in from "../images/sign_in.png"
-import favorites from "../images/favorites.png"
-import paro from "../images/paro_white.png"
+import shopping_cart from "../../images/shopping_cart.png"
+import sign_in from "../../images/sign_in.png"
+import favorites from "../../images/favorites.png"
+import paro from "../../images/paro_white.png"
 
 export default function Header() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -35,7 +35,7 @@ export default function Header() {
 
                 </div>
                 <div className="header_header_right">
-                    <div className="header_header_right">Язык</div>
+                    <div className="header_header_right">Заказы</div>
                     <div className="header_header_right">
                         <div id="header_header_right_items_with_icons">
                             <Image src={sign_in} width={25} height={25}></Image>
