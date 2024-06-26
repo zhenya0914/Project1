@@ -28,6 +28,30 @@ export default function Main() {
                 бла бла бла
               </div>
             </div>
+            <div id="main_main_prod">
+              !-- картинка товара
+              <div id="main_main_prod_description">
+                бла бла бла
+              </div>
+            </div>
+            <div id="main_main_prod">
+              !-- картинка товара
+              <div id="main_main_prod_description">
+                бла бла бла
+              </div>
+            </div>
+            <div id="main_main_prod">
+              !-- картинка товара
+              <div id="main_main_prod_description">
+                бла бла бла
+              </div>
+            </div>
+            <div id="main_main_prod">
+              !-- картинка товара
+              <div id="main_main_prod_description">
+                бла бла бла
+              </div>
+            </div>
           </div>
         </div>
     </div>
