@@ -1,49 +1,58 @@
 'use client'
+import Link from "next/link"
 import React, { useState } from 'react';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css'; 
 
-const RegisterForm = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('');
+  const RegisterForm = () => {
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [agree, setAgree] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const userData = { username, password, email };
+    const userData = { phoneNumber };
     console.log(userData);
-
+    if (!agree) {
+      alert('Вы должны согласиться с правилами использования.');
+      return;
+  }
   };
 
   return (
-    <div className='register_form'>
-    <form onSubmit={handleSubmit} className='form_container'>
-      <div>
-        <label>Имя пользователя</label>
-        <input className='form_group'
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
+    <div className='register_reg_form'>
+    <form onSubmit={handleSubmit} className='register_form_container'>
+      <div className="register_form_group">
+          <label className="register_header_label">Введите номер телефона</label>
+          <div className="form_description">
+          На введенный номер телефона будет отправлен код. 
+          Если код не придет в течение минуты, проверьте правильность набора номера телефона. 
+          </div>
+          <PhoneInput
+           country={'kz'}
+           value={phoneNumber}
+           onChange={setPhoneNumber}
+           inputProps={{
+             name: 'phone',
+             required: true,
+             autoFocus: true
+           }}
+          inputClass="phoneInput" 
+            buttonClass="phoneButton"
+          />
       </div>
-      <div>
-        <label>Пароль</label>
-        <input className='form_group'
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label>Email:</label>
-        <input className='form_group'
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-      </div>
-      <button type="submit" className='register_button'>Зарегистрироваться</button>
+
+      <div className="register_form_group">
+         <label className="register_rule_text">
+            <input type="checkbox"
+            id="agreeCheckbox"
+            checked={agree}
+            onChange={() => setAgree(!agree)} />  Я согласен с правилами использования
+          </label>                     
+        </div>
+
+           <a href="/">
+      <button type="submit" for="agreeCheckbox" disabled={agree} className='register_reg_button'>Зарегистрироваться</button>
+          </a>      
     </form>
     </div>
   );

@@ -1,7 +1,7 @@
 .main_page{
-    display: flex;
+    display: inline-table;
     box-sizing: border-box;
-    max-width: 80vw;
+    max-width: 1400px;
     justify-content: center;
     align-items: center;
 }
@@ -10,8 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1430vw;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     border: 1px solid black;
     border-radius: 16px;
 }
@@ -67,4 +67,30 @@
     cursor: pointer;
     transition: 0.3s;
     filter: opacity(100%);
+}
+
+.main_main_paragraph{
+    height: 10px;
+}
+
+.main_main_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_main_prod_list{
+    display: flex;
+}
+
+#main_main_prod{
+    display: flex;
+    justify-content: center;
+    width: 165px;
+    height: 165px;
+}
+
+#main_main_prod_description{
+    display: flex;
+    justify-content: center; 
 }

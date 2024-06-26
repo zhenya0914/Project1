@@ -1,35 +1,60 @@
-.register_button{
-    margin-top: 25px;
-    width: 100%; /* Ширина кнопки на всю ширину формы */
-    padding: 10px; /* Внутренний отступ кнопки */
-    background-color: #007bff; /* Цвет фона кнопки */
-    color: #fff; /* Цвет текста кнопки */
-    border: none; /* Убираем рамку у кнопки */
-    border-radius: 4px; /* Закругление углов кнопки */
-    cursor: pointer; /* Курсор указывает на возможность взаимодействия */
+.register_reg_button{       
+    
+    width: 80%; 
+    padding: 10px; 
+    background-color: #0357b1; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    
+    
 }
-.form_container{
-    width: 300px; /* Ширина формы */
+.register_form_container{  /* вся форма регистрации*/
+    width: 350px; 
     border: 1px solid #ccc; /* Обводка формы */
-    padding: 20px; /* Внутренний отступ формы */
-    border-radius: 5px; /* Закругление углов рамки */
+    padding: 25px; 
+    border-radius: 5px; 
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); /* Тень вокруг формы */
+    text-align: center;
 }
-.form_group{
-    margin-bottom: 15px;
-    width: 100%; /* Ширина поля ввода на всю ширину формы */
-    padding: 8px; /* Внутренний отступ поля ввода */
-    font-size: 14px; /* Размер шрифта */
-    border: 1px solid #ccc; /* Рамка поля ввода */
-    border-radius: 4px; /* Закругление углов поля ввода */
-}
-.register_form{
+
+.register_reg_form{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     height: 100vh;
 }
-label{
+.register_header_label{
     display: block; /* Размещение метки на новой строке */
-    margin-bottom: 5px; /* Отступ между меткой и полем ввода */
+    margin-bottom: 13px; 
+    font-size: 22px;
+    font-weight: 1000;
+    text-align: center;
 }
+
+.phoneInput {   
+    width: 100% !important;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #0357b1 !important;
+  }
+  
+ .phoneButton{
+    border: 1px solid #0357b1 !important;
+ }
+
+  .form_description{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .5  px;
+    margin-bottom:20px;  
+  }
+  .register_rule_text{
+  font-size: 14px;
+  font-weight: 200;
+  }
+  .register_form_group{
+    margin-bottom: 20px;
+  }

@@ -97,6 +97,8 @@
 #header_header_right_items_with_icons{
     flex-direction: column;
     text-align: center;
+    text-decoration-line: none;
+    color: white;
 }
 
 #header_header_right_items_with_icons:hover{
