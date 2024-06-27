@@ -2,10 +2,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import React, { useState } from "react";
-import shopping_cart from "../images/shopping_cart.png"
-import sign_in from "../images/sign_in.png"
-import favorites from "../images/favorites.png"
-import paro from "../images/paro_white.png"
+import shopping_cart from "../../images/shopping_cart.png"
+import sign_in from "../../images/sign_in.png"
+import favorites from "../../images/favorites.png"
+import paro from "../../images/paro_white.png"
 
 export default function Header() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -21,9 +21,15 @@ export default function Header() {
             <div className="header_header">
                 <div className="header_header_left">
                     <div id="header_header_left_marketplace_name">
-                        <Image src={paro} width={150}></Image>
+                    <a href="/">
+                    <Image src={paro} width={150}></Image>
+                    </a>   
                     </div>
-                    <div id="header_header_left_button"><button id="header_header_left_catalog"><div>Каталог</div></button></div>
+                    <div id="header_header_left_button">
+                        <button id="header_header_left_catalog">
+                            <div>Каталог</div>
+                        </button>
+                    </div>
                 </div>
             
                 <div className="header_header_center">
@@ -35,12 +41,12 @@ export default function Header() {
 
                 </div>
                 <div className="header_header_right">
-                    <div className="header_header_right">Язык</div>
+                    <div className="header_header_right">Заказы</div>
                     <div className="header_header_right">
-                        <div id="header_header_right_items_with_icons">
-                            <Image src={sign_in} width={25} height={25}></Image>
+                        <a href="/login" id="header_header_right_items_with_icons">
+                            <Image href="/login" src={sign_in} width={25} height={25}></Image>
                             <div>Войти</div>
-                        </div>
+                        </a>
                     </div>
                     <div className="header_header_right">
                         <div id="header_header_right_items_with_icons">
