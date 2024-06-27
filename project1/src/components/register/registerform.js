@@ -16,6 +16,7 @@ import 'react-phone-input-2/lib/style.css';
       alert('Вы должны согласиться с правилами использования.');
       return;
   }
+  window.location.href = '/';
   };
 
   return (
@@ -50,9 +51,9 @@ import 'react-phone-input-2/lib/style.css';
           </label>                     
         </div>
 
-           <a href="/">
-      <button type="submit" for="agreeCheckbox" disabled={agree} className='register_reg_button'>Зарегистрироваться</button>
-          </a>      
+           
+      <button type="submit" for="agreeCheckbox" disabled={!agree} className='register_reg_button'>Зарегистрироваться</button>
+            
     </form>
     </div>
   );
