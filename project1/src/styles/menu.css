@@ -1,0 +1,9 @@
+.menu_box{
+    display: flex;
+    z-index: 1000;
+    text-align: start;
+    position: fixed;
+    top: 150px;
+    left: 35px;
+    width: 200px;
+}
