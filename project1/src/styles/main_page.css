@@ -2,8 +2,8 @@
     display: inline-table;
     box-sizing: border-box;
     max-width: 1400px;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
+    top: 400px;
 }
 
 .main_main_paragraph{
@@ -18,10 +18,13 @@
 
 #main_main_prod_list{
     display: flex;
+    width: 1400px;
+    height: 1500px;
+    justify-content: space-between;
 }
 
 #main_main_prod{
-    display: flex;
+    display: table;
     justify-content: center;
     width: 165px;
     height: 165px;

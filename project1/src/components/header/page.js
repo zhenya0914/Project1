@@ -6,6 +6,7 @@ import shopping_cart from "../../images/shopping_cart.png"
 import sign_in from "../../images/sign_in.png"
 import favorites from "../../images/favorites.png"
 import paro from "../../images/paro_white.png"
+import Menu from "../menu/index.js"
 
 export default function Header() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -15,6 +16,10 @@ export default function Header() {
     const handle_search_submit = (event) => {
         event.preventDefault();
         console.log('Поиск:', searchTerm);
+    }
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
     return(
         <div className="header_box">
@@ -26,7 +31,7 @@ export default function Header() {
                     </a>   
                     </div>
                     <div id="header_header_left_button">
-                        <button id="header_header_left_catalog">
+                        <button onClick={toggleMenu} id="header_header_left_catalog">
                             <div>Каталог</div>
                         </button>
                     </div>
@@ -62,6 +67,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
+            {isMenuOpen && <Menu />}
         </div>
     )
 }
