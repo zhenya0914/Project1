@@ -7,3 +7,12 @@
     left: 35px;
     width: 200px;
 }
+
+.menu_list :hover{
+    cursor: pointer;
+}
+
+.menu_list div {
+    padding: 8px;
+    font-size: 17px;
+}
